@@ -111,11 +111,8 @@ class HorizontalAxisDecoration extends DecorationPainter {
   void initDecoration(ChartState state) {
     super.initDecoration(state);
     if (showValues) {
-      _longestText = axisValue.call(state.data.maxValue.toInt()).toString();
+      _longestText = '999';
 
-      if (_longestText.length < (horizontalAxisUnit?.length ?? 0.0)) {
-        _longestText = horizontalAxisUnit;
-      }
     }
   }
 
